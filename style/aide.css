@@ -1,0 +1,63 @@
+div{
+    align-items: baseline;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+}
+
+div.desc{
+    height: 499px;
+    width: 700px;
+    margin: 2%;
+}
+
+div.type{
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 90%;
+    border: 1px solid black;
+    margin-left: 72px;
+    border-radius: 30px;
+    padding-left: 2%;
+}
+
+div.lieu{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 400px;
+    border: 1px transparent;
+    margin: 10%;
+}
+
+.button{
+    background: transparent;
+    margin: 2px;
+}
+
+#verticalise{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    width: 1200px;
+}
+
+textarea{
+    height: 800px;
+    width: 600px;
+}
+
+#titreLieu{
+    margin: 2px;
+}
+
+#input{
+    width: 600px;
+    margin: 2%;
+}
