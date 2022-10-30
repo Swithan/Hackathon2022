@@ -10,7 +10,7 @@
     width:80%;
     height:450px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap:wrap;
     align-items: start;
 }
@@ -41,4 +41,12 @@ div{
     flex-direction: row;
     border: 1px solid black;
     margin-bottom: 10px;
+    overflow: hidden;
+}
+.table_feed_element{
+    flex-grow:1;
+}
+.table_feed_element img{
+    height: 100%;
+    width:auto;
 }
