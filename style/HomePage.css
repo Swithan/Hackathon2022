@@ -1,0 +1,59 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+#bigChungus{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 85%;
+    justify-content: space-around;
+}
+#left{
+    width: 55%;
+}
+#right{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#description{
+    word-wrap: break-word;
+    height: 30%;
+}
+#buttons{
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+#table{
+    border: solid black 2px;
+    border-radius: 15px;
+    height: 80%;
+}
+table{
+    width: 100%;
+}
+tr{
+    border: solid black 1px;
+}
+#helper, #helped{
+    font-size: larger;
+    height: 95%;
+    width: 45%;
+    align-content: center;
+}
+#contact{
+    height: 60px;
+}
+table{
+    height: 90%;
+}
+td{
+    text-align: center;
+}
