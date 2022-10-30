@@ -33,15 +33,22 @@ html, body {
     flex-direction: column;
 }
 #table{
-    border: solid black 2px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    border: solid green 1.5px;
     border-radius: 15px;
     height: 80%;
 }
-table{
-    width: 100%;
-}
-tr{
-    border: solid black 1px;
+.tr{
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    height:100px;
+    border: solid green 1px;
+    border-radius: 15px;
 }
 #helper, #helped{
     font-size: larger;
@@ -55,8 +62,9 @@ tr{
 table{
     height: 90%;
 }
-td{
-    text-align: center;
-}
-#name{
+.td{
+    display: flex;
+    justify-content: space-around;
+    height:100%;
+    width: auto;
 }
