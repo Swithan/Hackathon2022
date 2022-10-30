@@ -1,41 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <style>
-        #home{float: right}
-    </style>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Creation de profile</title>
+    
 </head>
-<body>
-<nav class="navbar navbar-light bg-light" style="padding-left: 10px;padding-right: 10px;margin-bottom:20px;">
-    <a class="navbar-brand" href="HomePage.html" style="font-size:30px;">
-        <img src="img/Chez_Isabelle.png" width="50" height="50" class="d-inline-block align-top" alt="">
-        AidiA
-    </a>
-    <button  id="home" class="btn btn-outline-success my-2 my-sm-0" onclick=location.href="HomePage.html">Home</button>
-</nav><br>
-    <div id="container">
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+<body >
+<header>
+    <nav class="navbar navbar-light bg-light" style="padding-left: 10px;padding-right: 10px;margin-bottom:20px;">
+        <a class="navbar-brand" href="#" style="font-size:30px;">
+            <img src="img/Chez_Isabelle.png" width="50" height="50" class="d-inline-block align-top" alt="">
+            AidiA
+        </a>
+        <button class="btn btn-outline-success ">Profile</button>
+    </nav>
+</header>
+<div class="container ">
+<form action="#">
+    <fieldset>
+    <legend class="is-size-1 3rem">Connexion</legend>
+    <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Addresse email</Address></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="D.Boulanger@yahoo.fr">
+                
             </div>
             <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
+                <input type="password" class="form-control" id="exampleInputPassword1"  placeholder="*****">
             </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <label class="form-check-label" for="exampleCheck1">Se rappeler de moi</label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
+    <div class="row"> 
+    <div class="mb-3 col-6">
+    <input class="form-control btn btn-success" type="button" id="pnom" name="pnom" Value="Me connecter" required><br>
+  </div>
+  <div class="mb-3 col-6">
+    <input class="form-control btn btn-success" type="button" id="nom" name="nom" Value="Créer un compte" required><br>
+  </div>
+  </div>
+  
+</fieldset>
+</form>
+</div>
+
+
 </body>
 </html>
