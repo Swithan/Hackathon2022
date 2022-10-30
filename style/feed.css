@@ -1,3 +1,8 @@
+body{
+    background-image: url("../img/fond.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 #search_bar{
     height:35px;
     width:80%;

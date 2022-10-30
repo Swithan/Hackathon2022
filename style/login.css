@@ -1,0 +1,9 @@
+body{
+    background-image: url("../img/fond.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#container{
+    display:flex;
+    justify-content: center;
+}

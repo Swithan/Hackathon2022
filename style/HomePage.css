@@ -1,6 +1,9 @@
 html, body {
     height: 100%;
     margin: 0px;
+    background-image: url("../img/fond.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #bigChungus{
     box-sizing: border-box;
