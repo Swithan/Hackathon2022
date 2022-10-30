@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Creation de profile</title>
+    
+</head>
+<body >
+<header>
+    <nav class="navbar navbar-light bg-light" style="padding-left: 10px;padding-right: 10px;margin-bottom:20px;">
+        <a class="navbar-brand" href="#" style="font-size:30px;">
+            <img src="img/Chez_Isabelle.png" width="50" height="50" class="d-inline-block align-top" alt="">
+            AidiA
+        </a>
+        <button class="btn btn-outline-success ">Profile</button>
+    </nav>
+</header>
+<div class="container ">
+<form action="#">
+    <fieldset>
+    <legend class="is-size-1 3rem">Création de profil</legend>
+    <div class="row"> 
+    <div class="mb-3 col-6">
+    <label class="form-label" for="pnom">Prénom :</label>
+    <input class="form-control" type="text" id="pnom" name="pnom" placeholder="Damien" required><br>
+  </div>
+  <div class="mb-3 col-6">
+    <label  class="form-label" for="nom">Nom:</label>
+    <input class="form-control" type="text" id="nom" name="nom" placeholder="Boulanger" required><br>
+  </div>
+  </div>
+  <div class="row">
+  <div class="mb-3 col-6">
+    <label  class="form-label" for="mdp">Mot de passe (huit caractères minimum):</label>
+    <input minlength="8" class="form-control" type="password" id="mdp" name="mdp" placeholder="Dami€nestBoulanger1234"required><br>
+  </div>
+  <div class="mb-3 col-6">
+    <label  class="form-label" for="Cmdp"> Confirmation mot de passe :</label>
+    <input minlength="8" class="form-control" type="password" id="Cmdp" name="Cmdp" placeholder="Dami€nestBoulanger1234"required><br>
+  </div>
+  </div>
+  <div class="row">
+  <div class="mb-3 col-6">
+    <label class="form-label" for="addM">Addresse Mail:</label>
+    <input class="form-control" type="email" id="addM" name="addM" placeholder="d.boulanger@hotmail.com" required><br>
+  </div>
+  <div class="mb-3 col-6">
+    <label class="form-label" for="num">Numéro de téléphone:</label>
+    <input class="form-control" type="tel" id="num" name="num" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="0123-45-67-89"><br>
+  </div>
+  </div>
+  <div class="row">
+  <div class="mb-3 col-6">
+    <label class="form-label" for="dateNaiss">Date de Naissance :</label>
+    <input class="form-control" type="date" id="dateNaiss" name="dateNaiss" placeholder="2006-12-31" max="2006-12-31" required><br>
+  </div>
+  <div class="mb-3 col-6">
+    <label class="form-label" for="addresse">Addresse:</label>
+    <input class="form-control" type="text" id="addresse" name="addresse" placeholder="Rue des Parmentiers 00, 1234 Bruxelles" required><br>
+  </div>
+  </div>
+  <div class="row">
+  <div class="mb-3 col-10">
+    <label class="form-label" for="photoP">Photo de profile :</label>
+    <input  class="form-control" type="file" id="photoP" name="photoP" accept="image/*" onchange="updatePreview(this, 'image-preview')" required><br>
+  </div>
+  <div class="col-2">
+    <div class="p-4 border border-secondary">
+        <div class="text-center">
+            <img id="image-preview" 
+                 src="https://via.placeholder.com/400"
+                 style="width:100px"
+                 class="rounded rounded-circle" alt="placeholder">
+        </div>
+    </div>
+</div>
+</div>
+
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="cgu" required>
+      <label class="form-check-label" for="cgu">J'accepte les conditions générales d'utilisation</label>
+      <div class="invalid-feedback">Vous devez accepter les CGU pour continuer</div>
+    </div><br>
+</div>
+  <div>
+    <button  class="btn btn-outline-success" type="button">Créer le compte</button>
+  </div><br><br>
+
+
+<script type="text/javascript">
+    function updatePreview(input, target) {
+        let file = input.files[0];
+        let reader = new FileReader();
+        
+        reader.readAsDataURL(file);
+        reader.onload = function () {
+            let img = document.getElementById(target);
+            // can also use "this.result"
+            img.src = reader.result;
+        }
+    }
+</script>
+</fieldset>
+</form>
+</div>
+
+
+</body>
+</html>
