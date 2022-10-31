@@ -16,8 +16,9 @@ body{
     height:450px;
     display: flex;
     flex-direction: column;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
     align-items: start;
+    overflow: scroll;
 }
 .bigger{
     flex-grow:2;
@@ -47,6 +48,8 @@ div{
     border: 1px solid black;
     margin-bottom: 10px;
     overflow: hidden;
+    background-color:white;
+    flex-shrink: 0;
 }
 .table_feed_element{
     flex-grow:1;

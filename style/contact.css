@@ -1,0 +1,19 @@
+#contact{
+    display: flex;
+    margin: 25%;
+    margin-top: 50px;
+    height: 500px;
+    width: 800px;
+    border-radius: 30px;
+    border: solid black 2px;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 2%;
+}
+
+body{
+    background-image: url("../img/fond.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

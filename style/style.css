@@ -1,21 +1,17 @@
-body{
-    background-image: url("../img/fond.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+div{
+    align-items: baseline;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
 }
-/*div{*/
-/*    align-items: baseline;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    flex-direction: column;*/
-/*    height: 100%;*/
-/*    width: 100%;*/
-/*}*/
 
 div.desc{
     height: 499px;
     width: 700px;
-    margin: 2%;
+    margin: 10%;
 }
 
 div.type{
@@ -34,9 +30,10 @@ div.lieu{
     display: flex;
     flex-direction: row;
     height: 500px;
-    width: 400px;
+    width:550px;
     border: 1px transparent;
-    margin: 10%;
+    margin: 5%;
+    padding: 5%;
 }
 
 .button{
@@ -45,23 +42,30 @@ div.lieu{
 }
 
 #verticalise{
-    justify-content: center;
+    justify-content: start;
     display: flex;
     flex-direction: row;
     margin: 25px;
-    width: 1200px;
+    width: 95%;
+    padding: 20px;
 }
 
 textarea{
     height: 800px;
     width: 600px;
+    border-radius: 10px;
 }
 
 #titreLieu{
     margin: 2px;
 }
 
-#input{
-    width: 600px;
-    margin: 2%;
+
+
+body{
+background-image: url("backgroundleaf.png")
+}
+
+#map{
+    border-radius: 10px;
 }
